@@ -1,0 +1,11 @@
+.project
+.sencha/
+.settings/
+#	app.js
+#	app.json
+#	app/
+#	build.xml
+#	index.html
+#	packager.json
+#	resources/
+#	touch/
