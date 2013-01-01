@@ -1,14 +1,46 @@
 Ext.define('PlusValue.view.Main', {
-    extend: 'Ext.tab.Panel',
+    //extend: 'Ext.tab.Panel',
+	extend: 'Ext.Panel',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        //'Ext.TitleBar',
+        //'Ext.Video',
+        'Ext.Carousel',
+        'Ext.Panel'
     ],
     config: {
-        tabBarPosition: 'bottom',
-
+//        tabBarPosition: 'bottom',
+//    	width: '100%',
+//    	height: '100%',
+    	
         items: [
+            {
+            	xtype: 'carousel',
+            	fullscreen: false,
+//            	flex: 1,
+            	docked: 'top',
+            	direction: 'horizontal',
+            	height: '170px',
+            	width: '100%',
+//            	layout: 'hbox',
+            	
+            	items: [
+            	    {
+            	    	xtype: 'panel',
+            	    	html: 'Formulario 1'
+            	    },
+            	    {
+            	    	xtype: 'panel',
+            	    	html: 'Formulario 2'
+            	    }
+            	]
+            },
+            {
+            	xtype: 'panel',
+            	html: 'Jajajaaj',
+            	flex: 1
+            }
+            /*
             {
                 title: 'Welcome',
                 iconCls: 'home',
@@ -45,6 +77,7 @@ Ext.define('PlusValue.view.Main', {
                     }
                 ]
             }
+            */
         ]
     }
 });
