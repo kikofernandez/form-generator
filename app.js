@@ -6,13 +6,15 @@ Ext.Loader.setPath({
 //</debug>
 
 Ext.application({
+    controllers: ["NewEvaluation"],
+
     name: 'PlusValue',
 
     requires: [
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main', 'NewReport', 'forms.BasicForm'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
