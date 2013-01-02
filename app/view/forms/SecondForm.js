@@ -1,7 +1,7 @@
-Ext.define('PlusValue.view.forms.BasicForm', {
+Ext.define('PlusValue.view.forms.SecondForm', {
 	extend: 'Ext.form.Panel',
-    xtype: 'basicform',
-    id: 'basicformid', // Ext.getCmp
+    xtype: 'secondform',
+    id: 'secondformid',
     fullscreen: true,
     
     requires: [
@@ -11,14 +11,12 @@ Ext.define('PlusValue.view.forms.BasicForm', {
     
     config: {
     	flex: 4,
-    	
     	items: [
     	    {
     	    	xtype: 'fieldset',
-    	    	title: 'Aqui va la primera pregunta',
+    	    	title: 'Aqui va otra pregunta',
     	    	layout: {
     	    		type: 'hbox',
-//    	    		align: 'stretch'
     	    	},
     	    	
     	    	items: [

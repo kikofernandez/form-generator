@@ -40,11 +40,19 @@ Ext.define('PlusValue.controller.NewEvaluation', {
     },
     
     onClickCarousel: function(component, view){
-    	var carousel = Ext.getCmp('carouselReport').getActiveItem();
-    	console.log('Selected: '+carousel.getId());
-    	console.log(this.getBasicForm());
-    	var basicForm = this.getBasicForm()
-    	Ext.Viewport.setActiveItem(basicForm);
+    	// We select the form from the attr toLoad
+    	var formToLoad = Ext.getCmp('carouselReport').getActiveItem();
+    	var formCmp = Ext.getCmp(formToLoad.idToLoad);
+    	if(!formCmp){
+    		// create the form
+    		console.log('create');
+        	formCmp = Ext.create(formToLoad.xtypeToLoad);
+    	}
+    	
+    	// Update the form panel when clicking in the carousel
+    	var changeable = Ext.getCmp('changeableformid');
+    	console.log(changeable);
+    	changeable.setActiveItem(formCmp);
     }
     
     //called when the Application is launched, remove if not needed

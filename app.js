@@ -14,7 +14,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'NewReport', 'forms.BasicForm'],
+    views: ['Main', 'NewReport', 'forms.BasicForm', 'forms.SecondForm'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
