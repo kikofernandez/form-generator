@@ -1,6 +1,8 @@
 Ext.define('PlusValue.view.NewReport', {
 	extend: 'Ext.Panel',
     xtype: 'newreport',
+//    id: 'newreportid',
+    
     requires: [
         'Ext.Carousel',
         'Ext.Panel',
@@ -11,6 +13,7 @@ Ext.define('PlusValue.view.NewReport', {
     	height: '100%',
     	fullscreen: true,
     	layout: 'vbox',
+    	itemId: 'newreportid',
 //    	scrollable: {
 //    		direction: 'vertical',
 //    		directionLock: true
@@ -65,6 +68,7 @@ Ext.define('PlusValue.view.NewReport', {
             	    	id: 'formBasic1',
             	    	xtypeToLoad: 'PlusValue.view.forms.BasicForm',
             	    	idToLoad: 'basicformid',
+            	    	itemIdToLoad: 'basicformid',
             	    	html: 'Formulario Basico',
             	    	flex: 1,
             	    	style: {
@@ -75,6 +79,7 @@ Ext.define('PlusValue.view.NewReport', {
             	    	xtype: 'panel',
             	    	title: 'form2',
             	    	id: 'formBasic2',
+            	    	itemIdToLoad: 'formBasic2',
             	    	html: 'Formulario 2',
             	    	xtypeToLoad: 'PlusValue.view.forms.SecondForm',
             	    	idToLoad: 'secondformid',

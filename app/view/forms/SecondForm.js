@@ -1,7 +1,7 @@
 Ext.define('PlusValue.view.forms.SecondForm', {
 	extend: 'Ext.form.Panel',
     xtype: 'secondform',
-    id: 'secondformid',
+//    id: 'secondformid',
     fullscreen: true,
     
     requires: [
@@ -11,6 +11,7 @@ Ext.define('PlusValue.view.forms.SecondForm', {
     
     config: {
     	flex: 4,
+    	itemId: 'secondformid',
     	items: [
     	    {
     	    	xtype: 'fieldset',

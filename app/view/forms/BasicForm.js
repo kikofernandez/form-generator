@@ -1,7 +1,7 @@
 Ext.define('PlusValue.view.forms.BasicForm', {
 	extend: 'Ext.form.Panel',
     xtype: 'basicform',
-    id: 'basicformid', // Ext.getCmp
+//    id: 'basicformid', // Ext.getCmp
     fullscreen: true,
     
     requires: [
@@ -11,6 +11,7 @@ Ext.define('PlusValue.view.forms.BasicForm', {
     
     config: {
     	flex: 4,
+    	itemId: 'basicformid',
     	
     	items: [
     	    {
