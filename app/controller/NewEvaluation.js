@@ -44,19 +44,20 @@ Ext.define('PlusValue.controller.NewEvaluation', {
     },
     
     onClickCarousel: function(component){
+    	console.log('inside controller');
     	// We select the form from the attr toLoad
     	var formToLoad = component.getActiveItem();
     	var newReport = this.getNewReport();
-    	var formCmp = newReport.getComponent(formToLoad.itemIdToLoad);
+    	var changeable = newReport.getComponent('changeableformid');
+    	
+    	var formCmp = changeable.getComponent(formToLoad.itemIdToLoad);
     	if(!formCmp){
     		// create the form
-//    		console.log('create');
+    		console.log('create2');
         	formCmp = Ext.create(formToLoad.xtypeToLoad);
     	}
     	
     	// Update the form panel when clicking in the carousel
-    	var changeable = Ext.getCmp('changeableformid');
-//    	console.log(changeable);
     	changeable.animateActiveItem(formCmp, {type: 'slide', direction: 'left'});
     }
     

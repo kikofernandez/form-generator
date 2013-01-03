@@ -47,7 +47,8 @@ Ext.define('PlusValue.view.NewReport', {
             	},
             	layout: 'card',
             	itemId: 'changeableform',
-            	id: 'changeableformid', // Ext.getCmp
+//            	id: 'changeableformid', // Ext.getCmp
+            	itemId: 'changeableformid',
             	items: [
             	    {
             	    	xtype: 'basicform'
@@ -95,6 +96,7 @@ Ext.define('PlusValue.view.NewReport', {
             	    	element: 'element',
             	    	event: 'tap',
                         fn: function(event, node, options, eOpts) {
+                        	console.log('tapped carousel');
                         	this.fireEvent('clickCarousel', this);
                         }
             	    }
