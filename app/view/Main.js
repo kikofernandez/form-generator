@@ -26,12 +26,14 @@ Ext.define('PlusValue.view.Main', {
 						id: 'newEvaluation',
 						itemId: 'newEvaluation',
 						text: 'Nueva Evaluacion',
-						flex: 1
+						flex: 1,
+						margin: '5%',
 					},
 					{
 						xtype: 'button',
 						text: 'Historial',
-						flex: 1
+						flex: 1,
+						margin: '5%',
 					}
             	]
             },
@@ -43,12 +45,14 @@ Ext.define('PlusValue.view.Main', {
 					{
 						xtype: 'button',
 						text: 'Graficos',
-						flex: 1
+						flex: 1,
+						margin: '5%',
 					},
 					{
 						xtype: 'button',
 						text: 'Generar Excel',
-						flex: 1
+						flex: 1,
+						margin: '5%',
 					}
             	]
             },

@@ -27,6 +27,11 @@ Ext.define('PlusValue.view.NewReport', {
             	    	xtype: 'button',
             	    	text: 'Atras',
             	    	id: 'backToMainFromNewReport'
+            	    },
+            	    { xtype: 'spacer' },
+            	    {
+            	    	xtype: 'button',
+            	    	text: 'Finalizar'
             	    }
             	]
             },
@@ -42,15 +47,10 @@ Ext.define('PlusValue.view.NewReport', {
             	id: 'changeableformid', // Ext.getCmp
             	items: [
             	    {
-            	    	xtype: 'panel',
-            	    	html: 'Formulario 1'
-//            	    	xtype: 'basicform'
+            	    	xtype: 'basicform'
             	    }
             	]
             },
-//            {
-//            	xtype: 'basicform'
-//            },
             {
             	xtype: 'carousel',
             	direction: 'horizontal',
@@ -66,16 +66,22 @@ Ext.define('PlusValue.view.NewReport', {
             	    	xtypeToLoad: 'PlusValue.view.forms.BasicForm',
             	    	idToLoad: 'basicformid',
             	    	html: 'Formulario Basico',
-            	    	flex: 1
+            	    	flex: 1,
+            	    	style: {
+            	    		'text-align': 'center'
+            	    	}
             	    },
             	    {
             	    	xtype: 'panel',
             	    	title: 'form2',
             	    	id: 'formBasic2',
             	    	html: 'Formulario 2',
-            	    	flex: 1,
             	    	xtypeToLoad: 'PlusValue.view.forms.SecondForm',
-            	    	idToLoad: 'secondformid'
+            	    	idToLoad: 'secondformid',
+            	    	flex: 1,
+            	    	style: {
+            	    		'text-align': 'center'
+            	    	}
             	    }
             	],
             	
