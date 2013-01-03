@@ -10,7 +10,7 @@ Ext.define('PlusValue.controller.NewEvaluation', {
         refs: {
            main: 'main',
            newReport: 'newreport',
-           carouselReport: '#carouselReport',
+           carouselReport: 'newreport #carouselReport',
            basicForm: 'basicform'
         },
         control: {
@@ -51,6 +51,12 @@ Ext.define('PlusValue.controller.NewEvaluation', {
     	var changeable = newReport.getComponent('changeableformid');
     	
     	var formCmp = changeable.getComponent(formToLoad.itemIdToLoad);
+    	console.log(formToLoad.itemIdToLoad);
+    	try{
+    		console.log(formCmp.getId());
+    	}catch(e){
+    		console.log('Does not exist the view');
+    	}
     	if(!formCmp){
     		// create the form
     		console.log('create2');

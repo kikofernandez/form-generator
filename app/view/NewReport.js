@@ -60,7 +60,7 @@ Ext.define('PlusValue.view.NewReport', {
             	direction: 'horizontal',
             	flex: 1,
             	itemId: 'carouselReport',
-            	id: 'carouselReport',
+//            	id: 'carouselReport',
             	
             	items: [
             	    {
@@ -80,7 +80,7 @@ Ext.define('PlusValue.view.NewReport', {
             	    	xtype: 'panel',
             	    	title: 'form2',
             	    	id: 'formBasic2',
-            	    	itemIdToLoad: 'formBasic2',
+            	    	itemIdToLoad: 'secondformid',
             	    	html: 'Formulario 2',
             	    	xtypeToLoad: 'PlusValue.view.forms.SecondForm',
             	    	idToLoad: 'secondformid',
